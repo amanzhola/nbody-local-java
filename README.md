@@ -124,7 +124,7 @@ java -cp "out;lib/stdlib.jar" NBodyLocal 157788000.0 25000.0 < data/galaxy.txt
 
 ---
 
-# 🌌 N-Body Simulation (Java) — Русская версия
+# 🌌 N-Body Simulation (Java)
 
 Проект моделирует движение планет под действием гравитации по закону Ньютона.
 
