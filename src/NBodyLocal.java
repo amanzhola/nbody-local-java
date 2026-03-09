@@ -39,13 +39,12 @@ public class NBodyLocal {
 
         Clip clip = null;
         try {
-            File file = new File("2001.wav");
+            File file = new File("assets/audio/2001.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
             clip = AudioSystem.getClip();
             clip.open(audioStream);
             clip.start();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Sound error: " + e.getMessage());
         }
 
@@ -83,10 +82,10 @@ public class NBodyLocal {
                 py[i] += vy[i] * dt;
             }
 
-            StdDraw.picture(0, 0, "starfield.jpg");
+            StdDraw.picture(0, 0, "assets/images/starfield.jpg");
 
             for (int i = 0; i < numParticles; i++) {
-                StdDraw.picture(px[i], py[i], image[i]);
+                StdDraw.picture(px[i], py[i], "assets/images/" + image[i]);
             }
 
             StdDraw.show();
@@ -102,7 +101,7 @@ public class NBodyLocal {
         System.out.println(radius);
         for (int i = 0; i < numParticles; i++) {
             System.out.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
-                              px[i], py[i], vx[i], vy[i], mass[i], image[i]);
+                    px[i], py[i], vx[i], vy[i], mass[i], image[i]);
         }
     }
 }
