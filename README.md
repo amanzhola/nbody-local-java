@@ -3,42 +3,34 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-
-## Project Goal
-
-This project was created as part of learning:
-
-- arrays
-- loops
-- file input
-- basic physics
-- Java graphics and animation
-
+      <h2>Project Goal</h2>
+      <p>This project was created as part of learning:</p>
+      <ul>
+        <li>arrays</li>
+        <li>loops</li>
+        <li>file input</li>
+        <li>basic physics</li>
+        <li>Java graphics and animation</li>
+      </ul>
     </td>
     <td valign="top" width="50%">
-
-## Overview
-
-An educational Java project that simulates planetary motion under Newtonian gravity.
-
-This project demonstrates:
-
-- array-based data storage
-- gravitational force calculation
-- object motion updates
-- 2D animation with images
-- background audio playback
-
+      <h2>Overview</h2>
+      <p>An educational Java project that simulates planetary motion under Newtonian gravity.</p>
+      <p>This project demonstrates:</p>
+      <ul>
+        <li>array-based data storage</li>
+        <li>gravitational force calculation</li>
+        <li>object motion updates</li>
+        <li>2D animation with images</li>
+        <li>background audio playback</li>
+      </ul>
     </td>
   </tr>
 
   <tr>
     <td valign="top" width="50%">
-
-## Project Structure
-
-<pre>
-nbody-local/
+      <h2>Project Structure</h2>
+      <pre>nbody-local/
 ├─ src/
 │  └─ NBodyLocal.java
 ├─ data/
@@ -73,20 +65,17 @@ nbody-local/
 │  └─ stdlib.jar
 ├─ docs/
 ├─ .gitignore
-└─ README.md
-</pre>
-
+└─ README.md</pre>
     </td>
     <td valign="top" width="50%">
-
-## Features
-
-- simulation of planetary motion
-- animated space system
-- planet rendering with image sprites
-- background music playback
-- multiple input scenarios (`planets.txt`, `galaxy.txt`, etc.)
-
+      <h2>Features</h2>
+      <ul>
+        <li>simulation of planetary motion</li>
+        <li>animated space system</li>
+        <li>planet rendering with image sprites</li>
+        <li>background music playback</li>
+        <li>multiple input scenarios (<code>planets.txt</code>, <code>galaxy.txt</code>, etc.)</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -99,8 +88,6 @@ Compile the project from the repository root:
 
 ```bash
 javac -cp ".;lib/stdlib.jar" -d out src/NBodyLocal.java
-````
-
 ---
 
 ## Run
@@ -129,44 +116,11 @@ java -cp "out;lib/stdlib.jar" NBodyLocal 157788000.0 25000.0 < data/galaxy.txt
 
 ---
 
-## File Update After Project Restructuring
-
-After reorganizing the repository, resource paths in `NBodyLocal.java` were updated.
-
-### Old paths
-
-```java
-File file = new File("2001.wav");
-StdDraw.picture(0, 0, "starfield.jpg");
-StdDraw.picture(px[i], py[i], image[i]);
-```
-
-### New paths
-
-```java
-File file = new File("assets/audio/2001.wav");
-StdDraw.picture(0, 0, "assets/images/starfield.jpg");
-StdDraw.picture(px[i], py[i], "assets/images/" + image[i]);
-```
-
-This keeps the repository clean and organized while preserving the original behavior of the program.
-
----
-
 ## Technologies
 
 * Java
 * StdDraw / StdIn (`stdlib.jar`)
 * Java Sound API
-
----
-
-## Author
-
-**Amanzhol**
-
-GitHub:
-`https://github.com/amanzhola`
 
 ---
 
@@ -244,6 +198,4 @@ java -cp "out;lib/stdlib.jar" NBodyLocal 157788000.0 25000.0 < data/galaxy.txt
 **Amanzhol**
 
 GitHub:
-`https://github.com/amanzhola`
-
-```
+`https://github.com/amanzhola
